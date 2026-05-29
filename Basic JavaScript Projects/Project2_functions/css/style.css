@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+
+body {
+    background-color: white;   
+    overflow-x: hidden; /* Hides the bottom left right scroll bar 
+    when elements stretch beyond the screen border;*/
+}
+
+div {
+    border: 1px solid lightgray;
+    width: 500px;
+    height: 190px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+}
+
+p{
+    font-family: 'Audiowide',sans-serif;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black ;  
+}
+
+button{
+    position: relative;
+    left: 45%;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: blue;
+    background-color: white;
+}
