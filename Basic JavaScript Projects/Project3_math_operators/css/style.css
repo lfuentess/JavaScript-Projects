@@ -1,0 +1,16 @@
+div{
+    border: 1px solid lightgray;
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    
+}
+
+p {
+    font-weight: bold;
+}
+
+.dataResult{
+    color: blue;
+}

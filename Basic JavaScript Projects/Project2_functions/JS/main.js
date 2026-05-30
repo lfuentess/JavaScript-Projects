@@ -5,3 +5,4 @@ function AssignVariable(variabA, variabB) {  //Defining a function
     document.getElementById("Button_Text").innerHTML = str;  // write variable to element Button_Text id 
     document.getElementById("btn1").innerText ="Done!";  // change button text
 }
+
