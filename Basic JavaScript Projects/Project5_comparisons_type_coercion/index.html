@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="JS/main.js" defer></script>
+    </head>
+    <body>
+        <h1>Click in each paragraph to see its type</h1>
+        <div id="ftypeof" class="divMain">
+            <h2>typeof function</h2>
+            <div>
+                <p onclick="testTypeof('type1', 'Hamilton')">type data 1</p>
+                <p id="type1"></p>
+            </div>
+            <div>
+                <p onclick="testTypeof('type2', 365)">type data 2</p>
+                <p id="type2"></p>
+            </div>
+        </div>
+        <div id="fcoercion" class="divMain">
+            <h2 onclick="testCoercion()">Type coercion</h2>
+            <div>
+                <p id="tcoercion" ></p>
+            </div>
+        </div>
+        
+        <div id="notANumber" class="divMain">
+            <h2>Not a Number (NaN)</h2>
+            <div>
+                <p onclick="testNaN('tcomparison0', 0/0)">test NaN (0/0)</p>
+                <p id="tcomparison0"></p>
+            </div>
+            <div>
+                <p onclick="testNaN('tcomparison1','this is a string')">test NaN ('this is a string')</p>
+                <p id="tcomparison1"></p>
+            </div>
+            <div>
+                <p onclick="testNaN('tcomparison2','1984')">test NaN ('1984')</p>
+                <p id="tcomparison2"></p>
+            </div>                        
+            <div>
+                <p onclick="testNaN('tcomparison3', 1984)">test NaN (1984)</p>
+                <p id="tcomparison3"></p>
+            </div>                        
+        </div>    
+        <div id="infinity" class="divMain">
+            <h2>Infinity</h2>
+            <div>
+                <p onclick="testInfinity('tcomparison4', 2E310)">test Infinity (1/0)</p>
+                <p id="tcomparison4"></p>
+            </div>
+            <div>
+                <p onclick="testInfinity('tcomparison5', -3E310)">test negative Infinity (1/0)</p>
+                <p id="tcomparison5"></p>
+            </div>
+        </div>
+        <div id="boolean" class="divMain">
+            <h2>Boolean</h2>
+            <div>
+                <p onclick="testBoolean('tcomparison6', '>', 10, 2)">test (10 > 2)</p>
+                <p id="tcomparison6"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison7', '<', 10, 2)">test (10 < 2)</p>
+                <p id="tcomparison7"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison8', '==', 10, 2)">test (10 == 2)</p>
+                <p id="tcomparison8"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison9', '==', 125, 125)">test (125 == 125)</p>
+                <p id="tcomparison9"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison10', '===', 78461, 78461)">test strict a <br>(78461 === 78461)</p>
+                <p id="tcomparison10"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison11', '===', 456, 'house')">test strict b <br>(456 === 'house')</p>
+                <p id="tcomparison11"></p>
+            </div> 
+            <div>
+                <p onclick="testBoolean('tcomparison12', '===', 10528, '10528')">test strict c <br>(10528 === '10528')</p>
+                <p id="tcomparison12"></p>
+            </div>
+            <div>
+                <p onclick="testBoolean('tcomparison13', '===', 78461, 421)">test strict d <br>(78461 === 421)</p>
+                <p id="tcomparison13"></p>
+            </div>         
+            <div>
+                <p onclick="testBooleanComplex('tcomparison14', '>', 15, 12,'>', 60,85,'&&')">test && <br>(15>12 && 60>85)</p>
+                <p id="tcomparison14"></p>
+            </div>
+            <div>
+                <p onclick="testBooleanComplex('tcomparison15', '>', 15, 22,'<', 60,85,'||')">test || <br>(15>12 || 60<85)</p>
+                <p id="tcomparison15"></p>
+            </div>
+            <div>
+                <p onclick="testBooleanComplex('tcomparison16', '>', 35, 22,'>',160,85,'||')">test || <br>(35>12 || 160<85)</p>
+                <p id="tcomparison16"></p>
+            </div>
+            <div>
+                <p onclick="not_function('tnot1',15,85)">test !(not) <br> !(15>85) </p>
+                <p id="tnot1"></p>
+            </div>
+            <div>
+                <p onclick="not_function('tnot2',15,12)">test !(not) <br> !(15>12) </p>
+                <p id="tnot2"></p>
+            </div>
+        </div>
+        <div id="tconsole" class="divMain">
+            <h2>Test Console.log()</h2>
+            <div>
+                <p onclick="testConsole('Hello, World!')">Test console.log('Hello, World!')</p>
+            </div>
+            <div>
+                <p onclick="testConsole(10 + 32)">test console.log (10 + 32)</p>
+                <p id="tcomparison9"></p>
+            </div>
+            <div>
+                <p onclick="testConsole(15 < 10)">test console.log (15 < 10)</p>
+                <p id="tcomparison10"></p>
+            </div>
+        </div>
+    </body>
+</html>
