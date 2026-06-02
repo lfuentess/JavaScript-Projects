@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project9_countdown_slideshow</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h2 class="center">Countdown Assignment</h2>
+            <div id="countdown" class="countdown-container">
+                
+                <input type="number" id="countdownInput" placeholder="Enter a number"><br>
+                <button onclick="startCountdown()">Start Countdown</button>
+                <p id="timer"></p>
+            </div>
+        </div>
+        <div id="slideshow">
+            <h2 class="center">Slideshow Assignment</h2>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/car1.jpg" >
+                    <div class="text">Shelby Cobra 427 S/C - 1965</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/car2.jpg" >
+                    <div class="text">MGB GT - 1969</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/car3.jpg" >
+                    <div class="text">Chevrolet Chevelle SS (Super Sport) - 1971</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+        <script src="JS/main.js"></script> 
+    </body>
+</html>
