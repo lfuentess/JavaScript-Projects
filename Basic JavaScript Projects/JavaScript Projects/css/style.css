@@ -1,0 +1,27 @@
+div{
+    border: 1px solid lightgray;
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+    float: left;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+}
+.divMain{
+    width: 75%;
+
+}
+h2{
+    text-align: center;
+}
+p {
+    font-weight: bold;
+}
+
+Canvas {
+    width: 90%;
+    height: 250;
+    border: 1px solid black;
+
+}
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact Form Challenge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/CSS_1.css" rel="stylesheet" />
+    <script src="JavaScript/JavaScript_2.js"></script>
+  </head>
+  <body>
+    <div>
+      <h2>HTML Form with CSS</h2>
+
+      <form id="mForm" onsubmit="return validateForm()" method="post" action="_blank">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          autofocus
+          required
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+          required
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option default disabled selected value="" >Select your option</option>  
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <input type="submit"  value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
