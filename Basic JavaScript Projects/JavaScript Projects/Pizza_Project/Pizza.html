@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Drill Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+        <link href="Pizza_CSS/Pizza.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="menuBG">
+            <h1>Pizza Drill Tutorial</h1>
+            <form id="frmMenu">
+                <div class="menu left">
+                    <h3>Size:</h3>
+                    <input type="radio" class="size" name="Size" value="Personal Pizza">Personal Pizza<br>
+                    <input type="radio" class="size" name="Size" value="small Pizza">small Pizza<br>
+                    <input type="radio" class="size" name="Size" value="Medium Pizza">Medium Pizza<br>
+                    <input type="radio" class="size" name="Size" value="Large Pizza">Large Pizza<br>
+                    <input type="radio" class="size" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+                </div>
+                <div class="menu left">
+                    <h3>Meats:</h3>
+                    <input type="checkbox" class="toppings" name="Topping" value="Pepperoni">Pepperoni<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Sausage">Sausage<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Canadian Bacon">Canadian Bacon<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Ground Beef">Ground Beef<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Anchovy">Anchovy<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Chicken">Chicken<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Turkey">Turkey<br>
+                </div>
+                <div class="menu left">
+                    <h3>Vegetables:</h3>
+                    <input type="checkbox" class="toppings" name="Topping" value="Mushrooms">Mushrooms<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Onions">Onions<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Tomatoes">Tomatoes<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Olives">Olives<br>
+                    <input type="checkbox" class="toppings" name="Topping" value="Green peppers">Green peppers<br>
+                </div>                
+                
+                <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Order">                
+                <div id="cart" >
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

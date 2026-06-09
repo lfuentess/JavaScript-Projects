@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Marck+Script&family=Passion+One:wght@400;700;900&family=Smooch+Sans:wght@100..900&display=swap');
+
+body{
+    background-color: rgb(17, 17, 195);
+    color: white;
+}
+
+h1 {
+    font-family: 'Josefin Slab', sans-serif;
+    margin: 0 0px 0 20px;
+    color: greenyellow;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Audiowide', sans-serif;
+    margin: 0 0px 0 20px;
+    color: rgb(253, 176, 31);
+}
+
+div {
+    font-family: 'Marck Script', sans-serif;
+    background-color: blueviolet;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#menuBG {
+    width: 687px;
+    height: 312px;
+    margin: 10px auto;
+    border-radius: 20px;
+    
+}
+.menu{
+    border:1px solid lightgray ;
+}
+
+#frmMenu {
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+    
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+    
+}
+
+#cart {
+    position: relative;
+    left: 100px;
+    top: 0px;
+    margin: 15px auto;
+    width: 450px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    padding: 10px;
+    
+}
+
+#btnOrder {
+    border-radius: 10px;
+    /*margin: 10px 0px 0px 100px;*/
+    margin-top: 20px;
+    margin-left: 290px;
+    width: 100px;
+    height: 40px;
+}
